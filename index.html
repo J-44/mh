@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://teachablemachine.withgoogle.com/models/zZds2NUyA/"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Family Member Teller</h1>
+        <span><h2 id="big">Grandfather</h2></span>
+        <span><h2 id="small">Son</h2></span>
+        <label>Live Preview</label>
+        <div id="live"></div> 
+        <br>
+        <br>
+        <div id="caught"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div><button onclick="picture();" class="btn btn-success">Capture</button></div>
+        <br>
+        <br>
+        <div><button onclick="identify();" class="btn btn-success">Identify Image</button></div>  
+        <br>
+        <br>
+        <label>Member</label><div id="thing"></div>
+        <label>Accuracy</label><div id="ac"></div>    
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body{
+    background-color: mediumaquamarine;
+  }
+  #live , #caught{
+    width:360px;
+    height: 250px;
+    border:1px solid grey;
+  }
